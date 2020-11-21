@@ -19,11 +19,13 @@ header {
     height: 60vh;
     position: absolute;
     top: 0;
-    animation: header-image, fade-in;
-    animation-duration: 5s, 3s;
-    animation-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.000), ease-in-out;
+    animation: header-image, fade-in, float;
+    animation-duration: 5s, 3s, 4s;
+    animation-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.000), ease-in-out, ease-in-out;
     animation-delay: 0s;
     animation-fill-mode: both;
+    animation-iteration-count: 1, 1, infinite;
+    animation-direction: alternate;
 }
 
 @keyframes header-image {
@@ -33,6 +35,15 @@ header {
 
     to {
         left: 5vw;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
     }
 }
 
@@ -52,10 +63,12 @@ header {
 
 @keyframes header-text {
     from {
+        letter-spacing: 20vw;
         right: -100vh;
     }
 
     to {
+        letter-spacing: normal;
         right: 62vw;
     }
 }
@@ -191,21 +204,36 @@ nav {
 
 /*Main Section*/
 #main-section {
-    padding: 5% 35%;
-    font-size: 2em;
+    padding: 5% 30%;
+    font-size: 1.75em;
     line-height: 1.5;
 }
 
 
 
-/*Section 2*/
-#section-2 {
-    padding: 5% 30%;
-    font-size: 1.5em;
+/*Projects*/
+#projects {
+    padding: 5% 25%;
+    font-size: 1.3em;
     line-height: 1.5;
     background-image: url(milky-way-2695569-small.jpg);
     background-size: cover;
     color: white;
+}
+
+.project-link {
+    color: white;
+    background: black;
+    border: 1px solid white;
+    padding: 1em;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s;
+}
+
+.project-link:hover {
+    background-color: white;
+    color: black;
+    padding: 1.5em;
 }
 
 @media (max-aspect-ratio: 1/1) { 
@@ -213,10 +241,11 @@ nav {
         padding: 5% 20%;
     }
 
-    #section-2 {
+    #projects {
         padding: 5% 10%;
     }
 }
+
 
 
 
