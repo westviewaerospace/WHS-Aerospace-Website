@@ -19,7 +19,6 @@ header {
     height: 60vh;
     position: absolute;
     top: 0;
-    left: 5vw;
     animation: header-image, fade-in;
     animation-duration: 5s, 3s;
     animation-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.000), ease-in-out;
@@ -42,7 +41,6 @@ header {
     mix-blend-mode: difference;
     position: absolute;
     top: 50vh;
-    right: 62vw;
     font-size: 5vw;
     max-width: 30vw;
     animation: header-text, fade-in;
@@ -72,6 +70,38 @@ header {
     }
 }
 
+@media (max-aspect-ratio: 1/1) {
+    #header-image {
+        height: 30vh;
+    }
+
+    @keyframes header-image {
+        from {
+            left: -100vh;
+        }
+    
+        to {
+            left: calc(50vw - 15vh);
+        }
+    }
+    
+    #header-text {
+        top: 30vh;
+        text-align: center;
+        max-width: 70vw;
+    }
+
+    @keyframes header-text {
+        from {
+            right: -100vh;
+        }
+    
+        to {
+            right: 15vw;
+        }
+    }
+}
+
 
 /*Nav*/
 nav {
@@ -93,7 +123,7 @@ nav {
     text-align: center;
     color: white;
     font-size: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 15vh;
 }
 
 #nav-list {
@@ -118,6 +148,43 @@ nav {
 
 #nav-list li {
     margin: 4vh;
+    list-style: none;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    nav {
+        top: 50vh;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        border-top: 1px solid white;
+        border-left: none;
+    }
+
+    #nav-header {
+        margin-bottom: 0;
+    }
+
+    #nav-list {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 10vh;
+    }
+
+    #nav-list li a {
+        padding: 2vh;
+    }
+
+    #nav-list li {
+        margin: 3vh 0;
+        flex-grow: 10;
+    }
+
+    #nav-list li a:hover {
+        padding: 3vh;
+    }
 }
 
 
@@ -139,6 +206,16 @@ nav {
     background-image: url(milky-way-2695569-small.jpg);
     background-size: cover;
     color: white;
+}
+
+@media (max-aspect-ratio: 1/1) { 
+    #main-section {
+        padding: 5% 20%;
+    }
+
+    #section-2 {
+        padding: 5% 10%;
+    }
 }
 
 
