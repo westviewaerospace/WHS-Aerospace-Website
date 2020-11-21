@@ -1,0 +1,155 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+
+/*Header*/
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+#header-image {
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    animation: header-image, fade-in;
+    animation-duration: 5s, 3s;
+    animation-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.000), ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes header-image {
+    from {
+        left: -100vh;
+    }
+
+    to {
+        left: 5vw;
+    }
+}
+
+#header-text {
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 50vh;
+    right: 62vw;
+    font-size: 5vw;
+    max-width: 30vw;
+    animation: header-text, fade-in;
+    animation-duration: 5s, 3s;
+    animation-timing-function: cubic-bezier(0.000, 1.000, 0.000, 1.000), ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes header-text {
+    from {
+        right: -100vh;
+    }
+
+    to {
+        right: 62vw;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Nav*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    background: #00000088;
+    width: 50vw;
+    height: 100vh;
+    border-left: 1px solid white;
+    animation: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+#nav-header {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 3em;
+}
+
+#nav-list {
+    text-align: right;
+}
+
+#nav-list li a {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 3vh;
+    font-size: 3vw;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s;
+}
+
+#nav-list li a:hover {
+    background-color: white;
+    color: black;
+    padding: 5vh;
+}
+
+#nav-list li {
+    margin: 4vh;
+}
+
+
+
+/*Main Section*/
+#main-section {
+    padding: 5% 35%;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+
+
+/*Section 2*/
+#section-2 {
+    padding: 5% 30%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
+
+/*footer*/
+footer {
+    padding: 2% 20%;
+    background: black;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
