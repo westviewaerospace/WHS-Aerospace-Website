@@ -90,7 +90,7 @@ header {
 
 
 
-/*Main Section*/
+/*Main Section - Denotes the most important content on the page.*/
 #main-section {
     padding: 5% 30%;
     font-size: 1.75em;
@@ -99,8 +99,8 @@ header {
 
 
 
-/*Projects*/
-#projects {
+/*Section types - I recommend alternating between these.*/
+.dark-section {
     padding: 5% 25%;
     font-size: 1.3em;
     line-height: 1.5;
@@ -109,19 +109,13 @@ header {
     color: white;
 }
 
-.project-link {
+.light-section {
+    padding: 5% 25%;
+    font-size: 1.3em;
+    line-height: 1.5;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
     color: white;
-    background: black;
-    border: 1px solid white;
-    padding: 1em;
-    text-decoration: none;
-    transition: background-color 0.5s, color 0.5s, padding 0.5s;
-}
-
-.project-link:hover {
-    background-color: white;
-    color: black;
-    padding: 1.5em;
 }
 
 @media (max-aspect-ratio: 1/1) { 
@@ -129,7 +123,7 @@ header {
         padding: 5% 20%;
     }
 
-    #projects {
+    .dark-section, .light-section {
         padding: 5% 10%;
     }
 }
