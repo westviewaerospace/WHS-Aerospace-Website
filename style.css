@@ -30,7 +30,7 @@ header {
 #header-text {
     color: white;
     mix-blend-mode: difference;
-    font-size: 6em;
+    font-size: 3em;
     text-align: center;
     width: 60vw;
     margin: auto;
@@ -67,7 +67,7 @@ header {
 }
 
 #nav-list li a {
-    border: 1px solid white;
+    border: 1px solid grey;
     background-color: black;
     color: white;
     text-decoration: none;
@@ -99,23 +99,14 @@ header {
 
 
 
-/*Section types - I recommend alternating between these.*/
-.dark-section {
-    padding: 5% 25%;
-    font-size: 1.3em;
-    line-height: 1.5;
-    background-image: url(milky-way-2695569-small.jpg);
-    background-size: cover;
-    color: white;
-}
+/*Sections*/
 
-.light-section {
+.section {
     padding: 5% 25%;
     font-size: 1.3em;
     line-height: 1.5;
-    background-image: url(milky-way-2695569-small.jpg);
-    background-size: cover;
-    color: white;
+    color: black;
+    background: white;
 }
 
 @media (max-aspect-ratio: 1/1) { 
@@ -123,7 +114,7 @@ header {
         padding: 5% 20%;
     }
 
-    .dark-section, .light-section {
+    .section {
         padding: 5% 10%;
     }
 }
@@ -147,19 +138,13 @@ footer a {
 
 /*outline*/
 #outline {
-    position: fixed;
-    top: 20%;
-    left: -21%;
+    position: sticky;
+    top: 30%;
+    left: 80%;
     width: 20%;
     padding: 2%;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    transition: left 0.15s;
-}
-
-#outline:hover {
-    left: 0%;
+    float: right;
+    color: #555555;
 }
 
 #outline-list li {
@@ -167,5 +152,27 @@ footer a {
 }
 
 #outline-list li a {
-    color: white;
+    color: #555555;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #outline {
+        position: fixed;
+        top: 20%;
+        left: -21%;
+        width: 20%;
+        padding: 2%;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        transition: left 0.15s;
+    }
+
+    #outline:hover {
+        left: 0%;
+    }
+
+    #outline-list li a {
+        color: white;
+    }
 }
