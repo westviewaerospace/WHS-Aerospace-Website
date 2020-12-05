@@ -1,0 +1,171 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+
+/*Header*/
+header {
+    width: 100vw;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+#header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vh;
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+#header-image:hover {
+    transform: scale(1.25);
+}
+
+#header-text {
+    color: white;
+    mix-blend-mode: difference;
+    font-size: 6em;
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    padding: 4vh;
+}
+
+@media (max-aspect-ratio: 1/1) { 
+    #header-image {
+        width: 8vh;
+    }
+}
+
+
+
+/*Nav*/
+#site-nav {
+    background: #000000;
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#nav-header {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+#nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+#nav-list li a {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.3em;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s;
+}
+
+#nav-list li a:hover {
+    background-color: white;
+    color: black;
+    padding: 1.5em;
+}
+
+#nav-list li {
+    margin: 1.5em 0.5em;
+    list-style: none;
+}
+
+
+
+
+/*Main Section - Denotes the most important content on the page.*/
+#main-section {
+    padding: 5% 30%;
+    font-size: 1.75em;
+    line-height: 1.5;
+}
+
+
+
+/*Section types - I recommend alternating between these.*/
+.dark-section {
+    padding: 5% 25%;
+    font-size: 1.3em;
+    line-height: 1.5;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.light-section {
+    padding: 5% 25%;
+    font-size: 1.3em;
+    line-height: 1.5;
+    background-image: url(milky-way-2695569-small.jpg);
+    background-size: cover;
+    color: white;
+}
+
+@media (max-aspect-ratio: 1/1) { 
+    #main-section {
+        padding: 5% 20%;
+    }
+
+    .dark-section, .light-section {
+        padding: 5% 10%;
+    }
+}
+
+
+
+
+/*footer*/
+footer {
+    padding: 2% 20%;
+    background: black;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+
+
+
+/*outline*/
+#outline {
+    position: fixed;
+    top: 20%;
+    left: -21%;
+    width: 20%;
+    padding: 2%;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: left 0.15s;
+}
+
+#outline:hover {
+    left: 0%;
+}
+
+#outline-list li {
+    list-style: none;
+}
+
+#outline-list li a {
+    color: white;
+}

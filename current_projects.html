@@ -2,36 +2,36 @@
 <html lang="en">
     <head>
         <title>WHS Aerospace Club</title>
-        <link rel="stylesheet" type="text/css" href="mainpage.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/ico" href="./favicon.ico"/>
     </head>
 
     <body>
         <header>
-            <img id="header-image" src="logo_nobackground.png" class="float">
             <h1 id="header-text">Westview Aerospace Club</h1>
+            <a href="index.html"><img id="header-image" src="logo_nobackground.png" ></a>
         </header>
         <nav id="site-nav">
             <h2 id="nav-header">Site Contents</h2>
             <ul id="nav-list">
-                <li><a href="#main-section">Who We Are</a></li>
+                <li><a href="index.html">Who We Are</a></li>
                 <li><a href="./current_projects.html">Current Projects</a></li>
                 <li><a href="./TODO.html">Resources</a></li>
                 <li><a href="./TODO.html">Blog</a></li>
                 <li><a href="./TODO.html">Contact Us</a></li>
             </ul>
         </nav>
-        <main>
+        <nav id="outline">
+            <h2 id="outline-header">Document Outline</h2>
+            <ul id="outline-list">
+                <li><a href="#CTE-mission-cubesat">CTE: Mission CubeSat</a></li>
+            </ul>
+        </nav>
+        <main> <!--Everything inside of the "main" tag is website content which can be safely removed and replaced for other pages.-->
             <section id="main-section">
-                <h2>The Club</h2>
-                <p>Westview Aerospace is a project-oriented club seeking to provide <strong>hands-on opportunities in aerospace</strong>. As universities begin to gain access to space with high altitude rockets, propulsion, and CubeSats, high school students are the next step in getting prepared for a future in space. Join the club today!</p>
-            </section>
-            <section id="projects">
                 <h2>Current Projects</h2>
-                <a class="project-link" href="current_projects.html">Click here for detailed information.</a>
-                <h3>CTE: Mission CubeSat</h3>
+                <h3 id="CTE-mission-cubesat">CTE: Mission CubeSat</h3>
                 <p>A national challenge to build technical skills for careers in space and beyond. The U.S. Department of Education invites high schools to bring space missions to students by designing and building CubeSat prototypes &mdash; in the classroom or at home. Designing and building a CubeSat prototype in this multiphase challenge will offer students a firsthand opportunity to learn valuable technical skills &mdash; such as engineering, computer science, research, logistics, project management, and marketing &mdash; that can be applied to careers in aerospace and many other industries.</p>
-                <br>
             </section>
         </main>
         <footer>
