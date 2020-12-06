@@ -7,6 +7,17 @@ body {
 
 
 /*Header*/
+#open-source-ftw {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    background: black;
+    color: white;
+    font-weight: bold;
+    width: 100vw;
+    display: block;
+}
+
 header {
     width: 100vw;
     height: 100vh;

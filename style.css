@@ -7,6 +7,17 @@ body {
 
 
 /*Header*/
+#open-source-ftw {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    background: black;
+    color: white;
+    font-weight: bold;
+    width: 100vw;
+    display: block;
+}
+
 header {
     width: 100vw;
     background-image: url(milky-way-2695569-small.jpg);
@@ -162,6 +173,7 @@ footer a {
         left: -21%;
         width: 20%;
         padding: 2%;
+        padding-right: 5%;
         color: white;
         background-color: black;
         border: 1px solid white;
