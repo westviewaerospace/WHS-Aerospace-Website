@@ -103,7 +103,7 @@ header {
 
 /*Main Section - Denotes the most important content on the page.*/
 #main-section {
-    padding: 5% 30%;
+    padding: 5% 35%;
     font-size: 1.75em;
     line-height: 1.5;
 }
@@ -113,7 +113,7 @@ header {
 /*Sections*/
 
 .section {
-    padding: 5% 25%;
+    padding: 5% 30%;
     font-size: 1.3em;
     line-height: 1.5;
     color: black;
@@ -130,6 +130,29 @@ header {
     }
 }
 
+.big-image {
+    width: 100%;
+}
+
+.left-image {
+    width: 40%;
+    float: left;
+    margin: 10px 20px;
+    margin-left: 0;
+}
+
+.right-image {
+    width: 40%;
+    float: right;
+    margin: 10px 25px;
+    margin-right: 0;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 40px;
+    border-left: 20px solid #BBBBBB;
+}
 
 
 
@@ -150,7 +173,7 @@ footer a {
 /*outline*/
 #outline {
     position: sticky;
-    top: 30%;
+    top: 10%;
     left: 80%;
     width: 20%;
     padding: 2%;
